@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getActionBar().hide();
         final Intent it=new Intent(MainActivity.this,LoginActivity.class);
         Thread td=new Thread(new Runnable() {
             @Override
