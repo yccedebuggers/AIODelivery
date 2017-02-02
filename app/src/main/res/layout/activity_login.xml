@@ -10,6 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shridharbadri.aiodelivery.LoginActivity">
 
+    <TextView
+        android:text="Forget Password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColorLink="@android:color/holo_blue_bright"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold|italic" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,4 +44,29 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:id="@+id/editText2" />
+
+    <Button
+        android:text="Log In"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_width="160dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_width="160dp" />
+
 </RelativeLayout>
