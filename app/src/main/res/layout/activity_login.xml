@@ -10,18 +10,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.shridharbadri.aiodelivery.LoginActivity">
 
+    <Button
+        android:text="Log In"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
     <TextView
         android:text="Forget Password?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="29dp"
         android:id="@+id/textView3"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColorLink="@android:color/holo_blue_bright"
         android:textColor="@android:color/holo_blue_light"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -29,10 +41,10 @@
         android:inputType="textPersonName"
         android:hint="UserName"
         android:ems="10"
+        android:layout_marginTop="106dp"
+        android:id="@+id/editText"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:id="@+id/editText" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -40,33 +52,29 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editText2"
         android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="LOGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:text="No Account Yet? Create One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:id="@+id/editText2" />
-
-    <Button
-        android:text="Log In"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
-        android:id="@+id/button2"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentEnd="true"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:visibility="visible"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_width="160dp" />
-
-    <Button
-        android:text="Cancel"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:visibility="visible"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentStart="true"
-        android:layout_width="160dp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/holo_green_light" />
 
 </RelativeLayout>

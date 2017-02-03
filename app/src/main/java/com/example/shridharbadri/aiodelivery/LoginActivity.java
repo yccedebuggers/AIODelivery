@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ForgetText=(TextView)findViewById(R.id.textView3);
         btnLogIn=(Button)findViewById(R.id.button2);
-        btnCancel=(Button)findViewById(R.id.button);
+        //btnCancel=(Button)findViewById(R.id.button);
         ForgetText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,17 +33,12 @@ public class LoginActivity extends AppCompatActivity {
 
                 btnLogIn.startAnimation(bounce);
 
-                btnLogIn.setEnabled(false);
-                btnCancel.setEnabled(true);
+                //btnLogIn.setEnabled(false);
+
 
             }
         });
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+
     }
 }
 class MyBounceInterpolator implements android.view.animation.Interpolator {
