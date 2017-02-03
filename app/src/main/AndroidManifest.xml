@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shridharbadri.aiodelivery">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
 
     <application
         android:allowBackup="true"
@@ -18,8 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SignUpActivityOwner" />
-        <activity android:name=".SignUpActivityDeliveryBoy"></activity>
+        <activity android:name=".TabPagerActivity"></activity>
     </application>
 
 </manifest>

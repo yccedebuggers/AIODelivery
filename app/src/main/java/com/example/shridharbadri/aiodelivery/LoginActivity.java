@@ -1,5 +1,6 @@
 package com.example.shridharbadri.aiodelivery;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView ForgetText;
     private EditText UserName,Password;
     private Button btnLogIn,btnCancel;
+    TextView NewAccounttext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +23,14 @@ public class LoginActivity extends AppCompatActivity {
         btnLogIn=(Button)findViewById(R.id.button2);
         UserName=(EditText)findViewById(R.id.userName);
         Password=(EditText)findViewById(R.id.Password);
-
-
+        NewAccounttext=(TextView)findViewById(R.id.textView);
+        NewAccounttext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,TabPagerActivity.class);
+                startActivity(intent);
+            }
+        });
         //btnCancel=(Button)findViewById(R.id.button);
         ForgetText.setOnClickListener(new View.OnClickListener() {
             @Override
