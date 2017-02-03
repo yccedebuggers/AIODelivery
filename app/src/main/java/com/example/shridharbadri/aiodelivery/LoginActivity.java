@@ -30,7 +30,6 @@ public class LoginActivity extends AppCompatActivity {
                 Animation bounce= AnimationUtils.loadAnimation(getApplication(),R.anim.bounce);
                 MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
                 bounce.setInterpolator(interpolator);
-
                 btnLogIn.startAnimation(bounce);
 
                 //btnLogIn.setEnabled(false);

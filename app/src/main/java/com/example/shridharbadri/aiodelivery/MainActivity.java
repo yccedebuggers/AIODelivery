@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Thread td=new Thread(new Runnable() {
             @Override
             public void run() {
-//                 td.sleep();
                 try {
                     sleep(3000);
                     startActivity(it);
