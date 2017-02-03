@@ -6,17 +6,23 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
-    TextView ForgetText;
-    Button btnLogIn,btnCancel;
+    private TextView ForgetText;
+    private EditText UserName,Password;
+    private Button btnLogIn,btnCancel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ForgetText=(TextView)findViewById(R.id.textView3);
         btnLogIn=(Button)findViewById(R.id.button2);
+        UserName=(EditText)findViewById(R.id.userName);
+        Password=(EditText)findViewById(R.id.Password);
+
+
         //btnCancel=(Button)findViewById(R.id.button);
         ForgetText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +40,11 @@ public class LoginActivity extends AppCompatActivity {
 
                 //btnLogIn.setEnabled(false);
 
-
+                //Getting data from EditText & Passing it to AsyncTask
+                String l_UserName=UserName.getText().toString();
+                String l_Password=Password.getText().toString();
+                BackgroundTask backgroundTask=new BackgroundTask(LoginActivity.this,l_UserName,l_Password);
+                backgroundTask.execute("login");
             }
         });
 
