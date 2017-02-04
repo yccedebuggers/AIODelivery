@@ -49,8 +49,8 @@ public class LoginActivity extends AppCompatActivity {
                 //btnLogIn.setEnabled(false);
 
                 //Getting data from EditText & Passing it to AsyncTask
-                String l_UserName=UserName.getText().toString();
-                String l_Password=Password.getText().toString();
+                String l_UserName=UserName.getText().toString().trim();
+                String l_Password=Password.getText().toString().trim();
                 BackgroundTask backgroundTask=new BackgroundTask(LoginActivity.this,l_UserName,l_Password);
                 backgroundTask.execute("login");
             }
