@@ -75,6 +75,7 @@
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@android:color/holo_green_light" />
+        android:textColor="@android:color/holo_green_light"
+        android:clickable="true"/>
 
 </RelativeLayout>
