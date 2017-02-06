@@ -15,6 +15,16 @@ public class SignUpActivityDeliveryBoy extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        edtName.getRootView().findViewById(R.id.deliceryboy_name);
+        edtEmail.getRootView().findViewById(R.id.deliveryboy_email);
+        edtuserName.getRootView().findViewById(R.id.deliveryboy_username);
+        edtAdd1.getRootView().findViewById(R.id.deliveryboy_add1);
+        edtAdd2.getRootView().findViewById(R.id.deliveryboy_add2);
+        edtAdd3.getRootView().findViewById(R.id.deliveryboy_add3);
+        edtPass.getRootView().findViewById(R.id.deliveryboy_pass);
+        edtRePass.getRootView().findViewById(R.id.deliveryboy_re_password);
+        btnCancel.getRootView().findViewById(R.id.cancel_deliveryboy_signup);
+        btnSave.getRootView().findViewById(R.id.signup_deliveryboy_submit);
         View rootView = inflater.inflate(R.layout.activity_sign_up_delivery_boy, container, false);
 
         return rootView;

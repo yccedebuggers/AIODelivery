@@ -44,7 +44,7 @@
                 android:text="Cancel"
                 android:layout_width="182dp"
                 android:layout_height="60dp"
-                android:id="@+id/cancel_deliveryboy_signup"
+                android:id="@+id/cancel_owner_signup"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="560dp"/>
@@ -55,9 +55,9 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:layout_marginTop="13dp"
-                android:id="@+id/deliveryboy_user"
+                android:id="@+id/owner_user"
                 android:hint="Username"
-                android:layout_below="@+id/deliveryboy_name"
+                android:layout_below="@+id/owner_name"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="15dp"/>
 
@@ -67,9 +67,9 @@
                 android:inputType="textPostalAddress"
                 android:ems="10"
                 android:layout_marginTop="12dp"
-                android:id="@+id/deliveryboy_add_line3"
-                android:layout_below="@+id/deliveryboy_add_line2"
-                android:layout_alignStart="@+id/deliveryboy_add_line2"
+                android:id="@+id/owner_add_line3"
+                android:layout_below="@+id/owner_add_line2"
+                android:layout_alignStart="@+id/owner_add_line2"
                 android:hint="Address Line 3" />
 
             <EditText
@@ -78,17 +78,17 @@
                 android:inputType="textPostalAddress"
                 android:ems="10"
                 android:layout_marginTop="11dp"
-                android:id="@+id/deliveryboy_add_line2"
+                android:id="@+id/owner_add_line2"
                 android:hint="Address Line 2"
-                android:layout_below="@+id/deliveryboy_add_line1"
-                android:layout_alignStart="@+id/deliveryboy_add_line1" />
+                android:layout_below="@+id/owner_add_line1"
+                android:layout_alignStart="@+id/owner_add_line1" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:layout_below="@+id/deliveryboy_pass"
+                android:layout_below="@+id/owner_pass"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:id="@+id/owner_re_password"
@@ -100,7 +100,7 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:layout_marginTop="22dp"
-                android:id="@+id/deliveryboy_name"
+                android:id="@+id/owner_name"
                 android:hint="Name and Surname"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true" />
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPostalAddress"
                 android:ems="10"
-                android:id="@+id/deliveryboy_add_line1"
+                android:id="@+id/owner_add_line1"
                 android:hint="Address Line 1"
                 android:layout_width="match_parent"
                 android:layout_below="@+id/textView5"
@@ -121,9 +121,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/deliveryboy_pass"
+                android:id="@+id/owner_pass"
                 android:hint="Password"
-                android:layout_below="@+id/deliveryboy_add_line3"
+                android:layout_below="@+id/owner_add_line3"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="13dp"
                 android:layout_marginTop="20dp"/>
@@ -138,7 +138,7 @@
                 android:height="30dp"
                 android:layout_marginTop="67dp"
                 android:typeface="monospace"
-                android:layout_below="@+id/deliveryboy_user"
+                android:layout_below="@+id/owner_user"
                 android:layout_alignParentStart="true" />
 
             <EditText
@@ -146,9 +146,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/deliveryboy_email"
+                android:id="@+id/owner_email"
                 android:hint="E-Mail Address"
-                android:layout_below="@+id/deliveryboy_user"
+                android:layout_below="@+id/owner_user"
                 android:layout_alignParentStart="true" />
 
             <Button
@@ -160,7 +160,7 @@
                 android:layout_column="3"
                 android:onClick="submitInformation"
                 android:layout_alignParentBottom="true"
-                android:layout_toEndOf="@+id/cancel_deliveryboy_signup"
+                android:layout_toEndOf="@+id/cancel_owner_signup"
                 android:layout_marginTop="560dp"/>
 
         </RelativeLayout>
