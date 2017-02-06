@@ -10,7 +10,6 @@ import android.widget.Button;
 import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
