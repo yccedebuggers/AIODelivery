@@ -20,4 +20,5 @@ public class SignUpActivityDeliveryBoy extends Fragment {
         return rootView;
     }
 
+
 }
